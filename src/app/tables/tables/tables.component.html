@@ -1,0 +1,15 @@
+<table class="ui striped celled table">
+  <thead>
+    <tr>
+      <th *ngFor="let header of headers">{{header.label}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of data" >
+      <td data-label="Employed">{{record.employed}}</td>
+      <td data-label="Name">{{record.name}}</td>
+      <td data-label="Age">{{record.age}}</td>
+      <td data-label="Job">{{record.job}}</td>
+    </tr>
+  </tbody>
+</table>
