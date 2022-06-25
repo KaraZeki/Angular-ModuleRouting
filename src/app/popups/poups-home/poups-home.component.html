@@ -1,0 +1,10 @@
+<app-divider>
+  Popup Home
+</app-divider>
+
+<div (click)="onChange()" class="ui primary right labeled icon button">
+  Kullanıc Onayı
+  <i class="checkmark icon"></i>
+</div>
+
+<app-modal (close)="onChange()" *ngIf="modalActive" ></app-modal>
