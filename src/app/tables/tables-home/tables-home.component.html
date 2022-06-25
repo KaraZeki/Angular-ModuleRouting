@@ -1,4 +1,16 @@
 
 <app-divider> Memnuniyet Anketi</app-divider>
 <app-tables></app-tables>
-<router-outlet></router-outlet>
+
+<app-divider>Detaylar  </app-divider>
+<app-tabs>
+  <a class="item" [routerLink]="['./']"  [routerLinkActiveOptions]="{exact:true}"  routerLinkActive="active" >
+    Bio
+  </a>
+  <a class="item" [routerLink]="['/tables/companies']" routerLinkActive="active">
+    Company
+  </a>
+  <a class="item"  [routerLink]="['/tables/partners']" routerLinkActive="active">
+   Partners
+  </a>
+</app-tabs>
